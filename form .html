@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family:sans-serif;
+            background-color: rgb(255, 231, 160);
+        }
+
+        form{
+            background-color: #202020;
+            width: 40%;
+            margin: 72px auto;
+            padding: 24px;
+            box-sizing: border-box;
+            color: #fff;
+            border-radius: 6px;
+        }
+
+        form .input-group{
+            display: flex;
+            flex-direction: column;
+            padding: 12px 0px;
+        }
+
+        form .input-group label{
+            margin-bottom: 4px;
+            color: #eee;
+        }
+
+        form .input-group input, form .input-group select{
+            padding: 8px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 4px;
+        }
+
+        form .submit-btn{
+            width: 100%;
+            margin: 12px 0px;
+            padding: 12px;
+            border-radius: 4px;
+            border: none;
+            background-color: #ffcc00;
+            font-size: 18px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="Name" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="input-group">
+            <label for="email">Email ID</label>
+            <input type="email" name="Email" id="emailID" placeholder="Enter Your Email">
+        </div>
+
+        <div class="input-group">
+            <label for="cityName">Select City</label>
+            <select name="city" id="cityName">
+                <option value="select" selected>Select Your City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Shimla">Shimla</option>
+                <option value="Goa">Goa</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="contact">Phone Numer</label>
+            <input type="number" placeholder="Enter phone number">
+
+        </div>
+
+        <input type="submit" class="submit-btn">
+    </form>
+
+    
+</body>
+</html>
